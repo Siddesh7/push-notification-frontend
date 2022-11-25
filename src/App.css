@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.avatar-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chat-box {
+    width: 420px;
+    position: fixed;
+    bottom: 80px;
+    left: 100px;
+    margin: auto;
+    height: 480px;
+}
+.chat-box .header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: #fff;
+   
+    padding: 15px;
+    width: 100%;
+    z-index: 2;
+}
+.chat-box .header .avatar-big {
+    width: 35px;
+    height: 35px;
+}
+.chat-box .header .name {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.chat-box .chat-room {
+    min-height: 300px;
+    background-color: #f7f9fb;
+    
+    height: 480px;
+    overflow-y:auto ;
+    
+border: solid 1px black;
+    
+
+}
+.chat-box .chat-room .avatar-small {
+    width: 25px;
+    height: 25px;
+}
+.chat-box .chat-room .message {
+
+    display: flex;
+    flex-direction: column;
+}
+.chat-box .chat-room .message-left {
+    align-items: flex-start;
+}
+.chat-box .chat-room .message-heading {
+    align-items: flex-start;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 700;
+    word-wrap:break-word;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.chat-box .chat-room .bubble {
+    padding: 10px;
+    font-size: 14px;
+
+  
+}
+.chat-box .chat-room .bubble-light {
+    background-color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.noti-icon{
+    width: 70px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgb(203, 202, 202);
+    border-radius:30% ;
+ cursor: pointer;
 }
+.noti-icon img{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    object-fit: cover;
 }
